@@ -1,11 +1,3 @@
-gameScore = "1";
-computerScore = 1;
-
-sumScore = gameScore + computerScore;
-
-alert(sumScore);
-
-function myGame() {
   scissors = 1;
   paper = 2;
   rock = 3;
@@ -51,4 +43,3 @@ function myGame() {
   function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
-}
