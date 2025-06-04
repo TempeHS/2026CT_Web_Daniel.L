@@ -27,6 +27,22 @@ def steps():
 def steps_intro():
     return render_template("/steps/intro.html"), 200
 
+@app.route('/steps/1')
+def steps_1():
+    return render_template("/steps/step_1.html"), 200
+
+@app.route('/steps/2')
+def steps_2():
+    return render_template("/steps/step_2.html"), 200
+
+@app.route('/steps/3')
+def steps_3():
+    return render_template("/steps/step_3.html"), 200
+
+@app.route('/steps/4')
+def steps_4():
+    return render_template("/steps/step_4.html"), 200
+
 
 
 if __name__ == '__main__':
