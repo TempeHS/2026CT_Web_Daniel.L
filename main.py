@@ -43,6 +43,10 @@ def steps_3():
 def steps_4():
     return render_template("/steps/step_4.html"), 200
 
+@app.route('/steps/5')
+def steps_5():
+    return render_template("/steps/step_5.html"), 200
+
 
 
 if __name__ == '__main__':
