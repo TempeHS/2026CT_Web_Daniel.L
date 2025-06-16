@@ -6,6 +6,7 @@ app = Flask(__name__)
 @app.route('/index.html')
 @app.route('/')
 
+
 def index():
     card_data = (
         ("What is Google", "Google is a powerful search engine that helps users find information quickly and efficiently. From websites and images to news and videos, Google organizes the world data to make it accessible at the click of a button.", "BUtton text", "static/images/card_image1.png", "/steps/intro"),
@@ -17,6 +18,14 @@ def index():
 @app.route('/contact')
 def contact():
     return render_template("contact.html"), 200
+
+# cards info
+
+@app.route('/whatisgoogle')
+def whatisgoogle():
+    return render_template("whatisgoogle.html"), 200
+
+# steps
 
 @app.route('/steps')
 @app.route('/help')

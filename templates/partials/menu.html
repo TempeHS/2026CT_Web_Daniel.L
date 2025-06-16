@@ -25,6 +25,24 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
+            About Google
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/whatisgoogle">What is Google?</a>
+            </li>
+            <li><a class="dropdown-item" href="/">Why use Google?</a></li>
+            <li><a class="dropdown-item" href="/">Features and Services</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             Steps
           </a>
           <ul class="dropdown-menu">
@@ -41,16 +59,18 @@
         <li class="nav-item">
           <a class="nav-link" href="/contact">Contact us</a>
         </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </div>
+      <div class="dropdown">
+        <button type="button" class="btn dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="/static/images/icon.png" alt="Button Image" class="rounded-circle" style="width: 25px; height: 25px;">
+          Sign in
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="/profile">Profile</a></li>
+          <li><a class="dropdown-item" href="/settings">Settings</a></li>
+          <li><a class="dropdown-item" href="/logout">Logout</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
