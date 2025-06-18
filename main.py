@@ -25,6 +25,14 @@ def contact():
 def whatisgoogle():
     return render_template("whatisgoogle.html"), 200
 
+@app.route('/whyusegoogle')
+def whyusegoogle():
+    return render_template("whyusegoogle.html"), 200
+
+@app.route('/features')
+def features():
+    return render_template("features.html"), 200
+
 # steps
 
 @app.route('/steps')
